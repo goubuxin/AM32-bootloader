@@ -81,6 +81,13 @@
 #define input_port       GPIOA
 #define PIN_NUMBER       2
 #define PORT_LETTER      0
+
+#elif defined(USE_PB9)
+#define input_pin  GPIO_PIN(9)
+#define input_port GPIOB
+#define PIN_NUMBER 9   // 引脚号是 9
+#define PORT_LETTER 1  // GPIOB 的端口编码是 1
+
 #elif defined(USE_PB4)
 #define input_pin         GPIO_PIN(4)
 #define input_port        GPIOB
